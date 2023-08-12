@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&display=swap');
+
+/* Variables */
+:root {
+    --green: #1ab26b;
+}
+
+/* Style common */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.col {
+    flex: 1;
+}
+
+.col-1 {
+    flex-basis: 66%;
+}
+
+.col-2 {
+    flex-basis: 33%;
+}
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Basic styling for the header */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0;
+    background: #FFFFFF;
+    position: sticky;
+    top: 0;
+}
+
+/* Styling for the logo */
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: auto;
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+/* Styling for the Spotify logo */
+.spotify-logo {
+    width: 220px;
+}
+
+/* Styling for the navigation links */
+.nav {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-item {
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+
+/* Styling for the navigation link text */
+.nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+
+/* Styling for section landing page */
+#landing {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('./assets/images/landing.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 850px;
+}
+
+#landing .title {
+    font-size: 64px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#landing .subtitle {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+
+/* Styling for section what in */
+#what-is {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+#what-is .title {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 4px solid var(--green);
+    font-weight: 500;
+}
+
+#what-is .item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#what-is .item .icon {
+    width: 140px;
+}
+
+#what-is .item .item--title {
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    font-weight: 600
+}
+
+#what-is .item .item--description {
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    width: 65%;
+}
+
+/* Styling for section music player */
+#music-player {
+    background: var(--green);
+    padding: 100px;
+    margin: 2rem;
+}
+
+#music-player .title {
+    color: white;
+    font-size: 36px;
+    display: flex;
+}
+
+#music-player .title .text {
+    border-bottom: 4px solid white;
+}
+
+#music-player .content {
+    color: #FFFFFF;
+    margin-top: 2.5rem;
+}
+
+#music-player .content .title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#music-player .content .description {
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+
+#music-player .image {
+    /*col d-flex flex-column justify-content-center align-items-center h-100*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#music-player img {
+    width: 100%;
+    height: auto;
+    margin-top: 2.5rem;
+}
